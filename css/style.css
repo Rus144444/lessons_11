@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;  
+}
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+body{
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: skyblue;
+    color: #eee;
+    z-index: 300;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 20px;
+}
+
+.header__container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.menu__item:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.menu__item {
+    position: relative;
+    display: inline-block;
+
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.menu__link {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.sub-menu__link {
+    font-size: 16px;
+    color: #fff;
+}
+
+.sub-menu {
+    background-color: #77608d;
+    padding: 15px;  
+    position: absolute;
+    top: 120%;
+    left: 0;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.sub-menu__item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+/* ------------------ */
+
+.items {
+    border: 3px solid black;
+    padding: 50px;
+    position: relative;
+    margin: 20px;
+    z-index: 120;
+}
+
+.items__item {
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+
+.items__item--bg-brown {
+    background-color: #794f45;
+    position: relative;
+    right: 100px;
+    z-index: 20;
+}
+
+.items__item--bg-purple {
+    background-color: #77608d;
+    position: sticky;
+    z-index: 300;
+    top: 0px;
+}
+
+.items__item--bg-green {
+    background-color: #7a956b;
+    position: relative;
+    bottom: 210px;
+    z-index: 21;
+}
+
+.wrapper{
+    min-width: 200px;
+    background-color: #eee;
+    padding: 200px;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.items_1 {
+    border: 3px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+
+.items__item_1 {
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+    
+}
+
+.items__item--bg-brown_1 {
+    background-color: #7945;
+}
+
+.items__item--bg-purple_1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #77608d;
+}
+
+.items__item--bg-green_1 {
+    background-color: #000;
+    color: azure;
+}
+
+
+.M-1{
+    min-width: 200px;
+    background-color: #eee;
+    padding: 200px;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.items_2 {
+    border: 3px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+
+.items__item_2 {
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+    
+}
+
+.items__item--bg-brown_2 {
+    background-color: #7945;
+}
+
+.items__item--bg-purple_2 {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #77608d;
+    z-index: 100;
+}
+
+.items__item--bg-green_2 {
+    background-color: #000;
+    color: azure;
+}
+
+.M-2{
+    min-width: 200px;
+    background-color: #eee;
+    padding: 200px;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.items_3 {
+    border: 3px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+
+.items__item_3 {
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+    
+}
+
+.items__item--bg-brown_3 {
+    background-color: #7945;
+}
+
+.items__item--bg-purple_3 {
+    background-color: #77608d;
+}
+
+
+.items__item--bg-green_3 {
+    background-color: #000;
+    color: azure;
+}
+
+.footer__car {
+    margin: 0 auto;
+    min-height: 700px;
+    background-color: #7a956b;
+    position: relative;
+}
+
+.footer__div__1{
+    width: 100px;
+    height: 100px;
+    background: rgb(90, 53, 8);
+    border: 15px solid #000;
+    margin: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+.footer__div__2{
+    width: 100px;
+    height: 100px;
+    background: rgb(90, 53, 8);
+    border: 15px solid #000;
+    margin: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+.footer__car-maket{
+    width: 350px;
+    height: 150px;
+    background: red;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+.footer__car-mak{
+    width: 150px;
+    height: 150px;
+    background: red;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}
+
+.footer__car-wow{
+    width: 100px;
+    height: 80px;
+    background: skyblue;
+    position: absolute;
+    top: 130px;
+    left: 320px;
+    z-index: 10;
+    border: 3px solid#000;
+}
+
+.footer__car-wow:hover{
+    background:#77608d;
+}
+
+.footer__led{
+    width: 60px;
+    height: 60px;
+    background: yellow;
+    position: absolute;
+    top: 220px;
+    left: 620px;
+    z-index: 12;
+    border: 5px solid#000;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.footer__led-2{
+    width: 60px;
+    height: 60px;
+    background: brown;
+    position: absolute;
+    top: 300px;
+    left: 620px;
+    z-index: 13;
+    border: 10px solid#000;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.footer__led:hover{
+    background: yellowgreen;
+}
+
+
+.footer__led-2:hover{
+    background: yellowgreen;
+}
+
+.footer__img {
+    position: relative;
+}
+
+.img {
+    max-width: 1000px;
+    min-width: 1000px;
+    margin: 50px;
+}
+
+.AMG{
+    position: absolute;
+    top: 550px;
+    right: 400px;
+}
